@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 from sklearn.base import BaseEstimator
-from xgboost import XGBClassifier
 from sklearn.model_selection import GridSearchCV, train_test_split
 from sklearn.naive_bayes import MultinomialNB
 from sklearn import feature_selection
 import numpy as np
 from sklearn.pipeline import FeatureUnion, Pipeline
-from sklearn.feature_selection import chi2
 class Classifier(BaseEstimator):
     
     def __init__(self):
